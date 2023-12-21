@@ -1,3 +1,6 @@
+#include<stdio.h>
+# define flase 1
+# define true 0
 
 int rgbToCMYK(int r, int g, int b, double *c, double *m, double *y, double *k);
 
@@ -23,11 +26,11 @@ int ptr_b = *b;
 
 if( (ptr_r == *r  ) || (ptr_g == *g) || (ptr_b == *b)){
 
-return false;
+return 1;
 
 }
 
-return true;
+return 0;
 
 }
 
@@ -74,10 +77,10 @@ b = b/255;
 
 if( (M == *m) || (C == *c) || (Y==*y) || (K==*k) ){
 
-return false;
+return 1;
 
 }
 
-return true;
+return 0;
 
 }
